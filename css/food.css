@@ -1,0 +1,646 @@
+.header {
+    flex: 1 0 10%;
+    overflow-y: hidden;
+    position: fixed;
+}
+
+.content {
+    flex: auto;
+    overflow-y: auto;
+    border-radius: 0 0 6px 6px;
+}
+
+
+/*
+
+#navrec1, #navrec2, #navrec3 {
+
+  width: 200px;;
+}*/
+
+
+
+.pagetitle {
+    flex-wrap: wrap;
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 1rem;
+}
+
+.sitenav{
+    flex: 1 1 30%;
+    flex-wrap: wrap;
+    text-align: right;
+    padding: 6.5px 0 0 0;
+}
+.sitenav > * {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.sitenav ul {
+    display: inline-flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.sitenav li {
+    float: right;
+}
+
+.sitenav li a {
+    display: inline-flex;
+    color: #333;
+    text-align: center;
+    padding: .8rem;
+    text-decoration: none;
+}
+
+.sitenav li a:hover {
+    color: #fff;
+    background-color: #333;
+}
+
+.sitecontent {
+    flex: auto;
+    overflow-y: auto;
+    background-color: #fff;
+    border-radius: 0 0 6px 6px;
+    z-index: 0;
+}
+
+article {
+    flex: auto;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+
+section {
+    display: inline-flex;
+}
+
+section .leftcolumn {
+    flex: 0 2 70%;
+    flex-wrap: wrap;
+    padding: 1rem 3rem 1rem 1rem;
+
+}
+
+section .rightrail {
+    flex: 0 1 30%;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+
+.photo{
+    padding: 4rem 0 4rem 0;
+    z-index: auto;
+    /*-- margin-top: 8rem; --*/
+    
+}
+
+#topPhotoFood {
+    background: #777 url("https://themuslimvibe.com/wp-content/uploads/2017/11/Cn6Iu1iVMAAfzmd.jpg") no-repeat;
+    background-position: top;
+    background-size: cover; 
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top:1px;
+    
+}
+
+
+
+.foodtitle {
+    background-color: rgba(255, 255, 255, 0.822);
+    padding: 2rem 2rem 2rem 2rem;
+    margin-left: 5px;
+    margin-right: auto;
+    opacity: .8;
+    max-width: 40%;
+    border-radius: 6px;
+    z-index: 999;
+}
+
+
+
+/*The slider*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+.i-am-centered { margin: auto; max-width: 1380px;}
+.snip1567 {
+  background-color: #000000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  display: inline-block;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  margin: 10px;
+  max-width: 310px;
+  min-width: 250px;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+.snip1567 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.snip1567 img {
+  max-width: 100%;
+  opacity: 0.75;
+  position: relative;
+  vertical-align: top;
+}
+
+.snip1567 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1567 h3 {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  background-color: #000000;
+  top: 0;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+  margin: 0;
+  padding: 10px 20px;
+  position: absolute;
+  width: 100%;
+}
+
+.snip1567 p {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  
+  padding: 0px 20px;
+  opacity: 0;
+  text-align: left;
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+.snip1567 i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 54px;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.snip1567 .hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  background-color: rgba(236, 188, 46, 0.75);
+  display: flex;
+  font-size: 65px;
+  justify-content: center;
+  opacity: 0;
+}
+
+.snip1567 a {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+
+
+
+.snip1567:hover .hover,
+.snip1567.hover .hover {
+  opacity: 1;
+}
+
+.snip1567:hover p,
+.snip1567.hover p {
+  opacity: 1;
+
+}
+
+.snip1567:hover h3,
+.snip1567.hover h3 {
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+.snip1567:hover i,
+.snip1567.hover i {
+  -webkit-transform: translate(-50%, -50%) scale(0.1);
+  transform: translate(-50%, -50%) scale(0.1);
+  opacity: 0;
+}
+
+
+/*Ingridients*/
+strong {
+    font-weight: 500;
+}
+
+#rec1 h3 {
+    background: #8BC34A;
+    padding: 0.8em 16px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 2em;
+    margin: 0;
+}
+
+#rec2 h3 {
+    background: #8BC34A;
+    padding: 0.8em 16px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 2em;
+    margin: 0;
+}
+
+#rec3 h3 {
+    background: #8BC34A;
+    padding: 0.8em 16px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 2em;
+    margin: 0;
+}
+
+h3 small {
+    display: block;
+    font-size: 16px;
+    margin-top: 8px;
+    font-style: italic;
+    color: #DCEDC8;
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+img {
+    max-width: 100%;
+}
+
+.recipe {
+    margin-bottom: 1em;
+    background: #fff;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.1);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.recipe-flex {
+    display: flex;
+}
+
+.description {
+    flex: 1 1 50%;
+    padding: 2em 2em 1em 1em;
+    background: #f5f5f5;
+}
+
+.plan {
+    flex: 1 1 50%;
+    min-width: 300px;
+    display: flex;
+    border-left: 3px solid #E8E8E8;
+}
+
+@media (min-height: 900px) {
+    body {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .recipe-flex {
+        flex-wrap: wrap;
+    }
+    .plan {
+        border-left: 0;
+    }
+    .stages {
+        margin-left: 24px;
+    }
+} 
+
+/* the outer list */
+.steps {
+  margin: 2em 0 0 -3px;
+  padding: 0 1em 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  counter-reset: steps; /* alternative to built-in list style that we can style */
+}
+
+/* the steps (li) */
+.steps > li {
+  padding: 28px 0 0 12px;
+  flex: 1 1 100%;
+  position: relative;
+  border-left: 3px solid;
+  counter-increment: steps;
+}
+
+/* this isn't needed, but I prefer some spacing at the bottom */
+.steps > li:last-child {
+  padding-bottom: 2em;
+}
+
+/* the smallish description label next to the bubble */
+.steps > li::before {
+  content: "Step " counter(steps) ": " attr(data-description);
+  position: absolute;
+  top: 3px;
+  left: 24px;
+  font-style: italic;
+  color: #777;
+  font-size: 12px;
+}
+
+/* the bubble with the number in it */
+.steps > li::after {
+  position: absolute;
+  top: 0;
+  left: -16px;
+  background: #fff;
+  border-radius: 20px;
+  width: 24px;
+  height: 24px;
+  display: block;
+  text-align: center;
+  font-weight: 800;
+  line-height: 26px;
+  content: counter(steps);
+  border: 3px solid;
+}
+
+/* the inner list within a step */
+.steps ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-left: 12px;
+  padding-top: 3px;
+}
+
+.steps ul li {
+  position: relative;
+}
+
+.steps ul li::before {
+  content: "";
+  width: 10px;
+  height: 4px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: -27px;
+  border-radius: 10px;
+}
+
+/* Let's color our steps */
+.steps > li:nth-child(1),
+.steps > li:nth-child(1)::after { border-color: #DCEDC8; }
+.steps > li:nth-child(1) li::before { background-color: #DCEDC8; }
+.steps > li:nth-child(2),
+.steps > li:nth-child(2)::after { border-color: #C5E1A5; }
+.steps > li:nth-child(2) li::before { background-color: #C5E1A5; }
+.steps > li:nth-child(3),
+.steps > li:nth-child(3)::after { border-color: #AED581; }
+.steps > li:nth-child(3) li::before { background-color: #AED581; }
+.steps > li:nth-child(4),
+.steps > li:nth-child(4)::after { border-color: #9CCC65; }
+.steps > li:nth-child(4) li::before { background-color: #9CCC65; }
+.steps > li:nth-child(5),
+.steps > li:nth-child(5)::after { border-color: #8BC34A; }
+.steps > li:nth-child(5) li::before { background-color: #8BC34A; }
+.steps > li:nth-child(6),
+.steps > li:nth-child(6)::after { border-color: #7CB342; }
+.steps > li:nth-child(6) li::before { background-color: #7CB342; }
+
+
+
+
+
+
+/*buttons*/
+
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+#foodButtons ul li {
+    height: 50px;
+    width: 200px;
+    background: transparent;
+    display: block;
+    font-family: "Oswald", sans-serif;
+    position: relative;
+    z-index: 100;
+    margin: 5px 0;
+    -webkit-animation: menu 2s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: menu 2s;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation: menu 2s;
+    -ms-animation-fill-mode: forwards;
+    animation: menu 2s;
+    /* Safari and Chrome */
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  
+  #foodButtons ul li:hover {
+    cursor: pointer;
+  }
+  
+  #foodButtons ul li:before {
+    display: block;
+    height: 50px;
+    width: 50px;
+    content: '>';
+    font-size: 2em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-right: rgba(255, 255, 255, 0.2) 1px solid;
+    text-align: center;
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px;
+    z-index: 200;
+    line-height: 1.3em;
+  }
+  
+  #foodButtons li a {
+    color: #fff;
+    display: block;
+    height: 50px;
+    padding: 0 2em 0 70px;
+    z-index: 100;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15.5px;
+    line-height: 2.8em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    text-shadow: rgba(0, 0, 0, 0.3) 1px 1px;
+  }
+  
+  #foodButtons ul li:nth-child(1) a {
+    background: #888888;
+  }
+  
+  #foodButtons ul li:nth-child(2) a {
+    background: #628179;
+  }
+  
+  #foodButtons ul li:nth-child(3) a {
+    background: #21aabd;
+  }
+  
+  #foodButtons ul li:nth-child(4) a {
+    background: #654b6b;
+  }
+  
+  #foodButtons ul li:nth-child(5) a {
+    background: #bd2a4e;
+  }
+  
+  #foodButtons li a:hover {
+    opacity: 1.0;
+    padding-right: 3.0em;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  #foodButtons ul li:nth-child(2) {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -ms-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+  }
+  
+  #foodButtons ul li:nth-child(3) {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    -ms-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+  }
+  
+  #foodButtons ul li:nth-child(4) {
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    -ms-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+  }
+  
+  #foodButtons ul li:nth-child(5) {
+    -webkit-animation-delay: 1.6s;
+    -moz-animation-delay: 1.6s;
+    -ms-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+  }
+  
+  @-webkit-keyframes menu {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.7;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes menu {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.7;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-ms-keyframes menu {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.7;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes menu {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.7;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+
+  

@@ -1,520 +1,1023 @@
-<!doctype html>
-<html lang="en"> 
-<head>
-    <!-- Required meta tags -->
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <!--Unity WebGL Requirements-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!---<meta http-equiv="Content-Type" content="text/html; charset=utf-8">-->
+   
+   <link rel="shortcut icon" href="TemplateData/favicon.ico">
+   <link rel="stylesheet" href="TemplateData/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Londrina+Solid' rel='stylesheet' type='text/css'>
+    
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="css/bootstrap.css">
 
-    <!--x3dom-->
-    <link rel='stylesheet' type='text/css' href='css/x3dom.css'>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+     <!--Custom css-->
+     <link rel="stylesheet" href="css/custom.css" />
+     <link rel="stylesheet" href="css/destinations.css" />
+     <link rel="stylesheet" href="css/food.css" />
+     <link rel="stylesheet" href="css/x3dom.css" />
+     <!---<link rel="stylesheet" href="css/custom2.css" />-->
      
-    <!--CSS-->
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/slider.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+
     <!--Fonts-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
-   
-    <title> My Template</title>
+
+    <title>The Culture of Palestine</title>
+    
   </head>
-  <body id="bodyColor">
-    <!--Navagation Bar at the top-->
+  <body id ="bodyColor">
 
-    <audio  id="ps1intro" preload="auto">
-        
-        <source src="assets/audio/PlayStation.mp3" type="audio/mpeg">
-      
-      </audio>
 
-      <audio id="ps4intro">
-        
-        <source src="assets/audio/ps4intro.mp3" type="audio/mpeg">
-      
-      </audio>
+    
+    <div class ="webContent">
 
-    <nav id="headerColor" class="navbar sticky-top navbar-expand-sm navbar_ps">
+<!--Navagation Bar-->
+      <nav id="headerColor" class="navbar sticky-top navbar-expand-sm navbar_ps">
         <div class="container-fluid"> 
-            <!-- Brand -->
-            <div class="logo">
-                    <a class="navbar-brand" href="#">
-                      <div id ="psLogo"></div>
-                    </a>
-            </div>
-
-            <!-- Navbar Menu Icon -->
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
-                    <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             
-            <!-- link Menu Icon button to the links class navbar-collapse selector] -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- Links -->
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
+
+                    <li class="nav-item" >
                         <a id="navHome" class="nav-link active" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                            <a id="navAbout" class="nav-link"  href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" title="About Web 3D Applications" data-content="3D Apps is a final year and postgraduate module ...">About</a>
+
+                    <li class ="nav-item">
+                      <a class="nav-link" href="" onclick="cameraDefault();" data-toggle="modal" data-target="#contactModal" id="navModels">Destinations</a>
                     </li>
 
-                    <!-- Dropdown -->
-                    <a id="navModels" class="nav-link"  href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Check out the four awesome models I made" title="X3D Models" > Models</a>
-                     
+                    <li class ="nav-item">
+                      <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal" id="navFood">Food</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
+
+                    <li class ="nav-item">
+                      <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal" id="navMahmoud">Game</a>
                     </li>
-                </ul>
+
+                    
+                   
+                    
+                   </ul>          
+    
             </div>
+  
+          
         </div>
-    </nav>
+    </nav>  <!--End of Navigation Bar-->
 
   
-   <div class="container-fluid"> <!--The whole conents of the page-->
+    
+    <div id="home">
+      
 
-    <!--Home page contents-->
-    <div class="main_contents" id="home">
-        <div class="row">
-            <div class="col-sm-12">
-                
-                    <div id="main_text" class="col-xs-12 col-sm-4">
-                    <div id="title_home"></div>
-                    <div id = "subTitle_home"></div>
-                    <div id = "description_home"></div>
-                    </div> 
-                
+       
+<div class = "row"> <!-- Slideshow Row-->
+  <div class = "col-sm-12">
+<!--Slideshow in the homepage--><div class="contmin">
+        
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <div class="carousel-inner">
+      
+      <div class="carousel-item active">
+          
+        <img class="d-block w-100" src="https://www.welcometopalestine.com/wp-content/uploads/2016/06/Bethlehemcity.jpg" alt="Post Picture">
+        <div class="container">
+          <div class="hometitle carousel-caption" id="welcome">
+            <h1>WELCOME TO PALESTINE</h1>
+            <p class="text-truncate">Discover the culture of Palestine</p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://mondoweiss.net/wp-content/uploads/2015/11/palestine-14-october-2007-076.jpg" alt="Post Picture">
+        <div class="container">
+          <div class="carousel-caption text-left">
+             <h1>Olive trees</h1>
+             <p class="text-truncate">Olives trees are symbolic of Palestinians’ attachment to their land, and they're considered one of the main crops in Palestine </p>
+      
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://s3-eu-west-1.amazonaws.com/atharna-production/app/public/ckeditor_assets/pictures/867/content_img_9373.jpg" alt="Post Picture">
+        <div class="container">
+          <div class="carousel-caption text-left">
+            <h1>Embroidery</h1>
+            <p class="text-truncate">Traditional patterns used in Palestinian embroidery</p>
+     
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://abrahampath.org/wp-content/uploads/2018/05/Abraham-Path-Jenin-135.jpg" alt="Post Picture">
+        <div class="container">
+          <div class="carousel-caption text-left">
+           \<h1>Traditional Wear</h1>
+            <p class="text-truncate">Old men wearing traditional Palestinian clothing.</p>
+            
+          </div>
+        </div>
+      </div>
+      
+ 
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div> <!--End of Slideshow-->
+
+</div>
+</div>
+
+      
+     
+      <div class="row"> <!--Cards row-->
+        <div class="col-sm-4">
+            <div class="card">
+                <div class = "img img-scale">
+                    <img class="card-img-top img-fluid img-thumbnail" src="https://excellencenter.org/wp-content/uploads/2017/10/Hebron-city-2017-1024x684.jpg">
+                  </div>
+                <div class="card-body">
+                    <h3 class="card-title">Cities of Palestine</h3>
+                    <p class="card-text"> Discover the map of Palestine and learn some interesting facts about two of the cities there. Jerusalem, the heart of Palestine with its beautiful and historical landmarks, and Nablus, known as the Queen of Palestine, a majestic city with a fascinating history. </p>    
+                    <a href="#" id="navModels2" class="btn btn-dark">Discover more!</a>                 
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-sm-4">
+            <div class="card">
+           
+                  <div class = "img img-scale">
+
+                  
+                    <img class="card-img-top img-fluid img-thumbnail" src="https://www.mamavation.com/wp-content/uploads/2017/03/vibe23.jpg">
+                  </div>
+                 
+                <div class="card-body">
+                    <h3 class="card-title">Palestinian Food</h3>
+                    <p class="card-text">The food of Palestine is a sumptuous array of vibrant and flavoursome dishes, sharing culinary traits with Middle Eastern and East Mediterranean regions. Nonetheless, Palestinian cuisine has its own unique identity, which stands out within the area and across the world.</p>
+                    <a href="#" id="navFood2" class="btn btn-dark">Check out some recipices!</a>
+                </div>
             </div>
         </div>
 
-        <div class="row"> <!--Row for the photo slider at the bottom of the home page-->
-          <main class="content" role="content">
-              <section class="container-fluid" id="section1">
-            
-              <div class="container m-2" id="arrows"> 
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <a class="btn btn-outline-secondary prev" href="" title="go back" data-target="Previous Slide"><i class="fa fa-lg fa-chevron-left"></i></a>
-                            <a class="btn btn-outline-secondary next" href="" title="more" data-target="Next Slide"><i class="fa fa-lg fa-chevron-right"></i></a>
-                        </div>
-                    </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class = "img img-scale">
+                    <img class="card-img-top img-fluid img-thumbnail" src="assets/images/ac.jpg">
                 </div>
-                <div class="carousel slide" data-ride="carousel" id="postsCarousel">
-                    <div class="row row-equal carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="col-md-4">
-                      <div class="card">
-                        <img class="card-img-top" src="https://www.androidcentral.com/sites/androidcentral.com/files/styles/large/public/article_images/2018/10/original-playstation-versus_0.jpg?itok=0ej8yh9i" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Playstion One</h5>
-                          <p class="card-text">The PlayStation is a home video game console developed and marketed by Sony Computer Entertainment. It was first released on 3 December 1994 in Japan.</p>
-                          
-                        </div>
-                      </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-4">
-                      <div class="card">
-                        <img class="card-img-top" src="https://psmedia.playstation.com/is/image/psmedia/ps2-hardware-two-column-01-ps4-eu-18nov15?$TwoColumn_Image$" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Playstation 2</h5>
-                          <p class="card-text">The PlayStation 2 is a home video game console developed and marketed by Sony Computer Entertainment. It was first released in Japan on March 4, 2000 .</p>
-                          
-                        </div>
-                      </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-4">
-                      <div class="card">
-                        <img class="card-img-top" src="https://pmcvariety.files.wordpress.com/2017/03/playstation-3.jpg?w=1000" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">PlayStation 3</h5>
-                          <p class="card-text">The PlayStation 3 (officially abbreviated as PS3) is a home video game console developed by Sony Computer Entertainment. It is the successor to PlayStation 2, and is part of the PlayStation brand of consoles. It was first released on November 11, 2006 in Japan.</p>
-                      
-                        </div>
-                      </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-4">
-                      <div class="card">
-                        <img class="card-img-top" src="https://cdn.mos.cms.futurecdn.net/eW8gPh9RFcpAwYDsyM3t7Q.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Playstation 4</h5>
-                          <p class="card-text">The PlayStation 4 (PS4) is an eighth-generation home video game console developed by Sony Computer Entertainment. Announced as the successor to the PlayStation 3 in February 2013.</p>
-                         
-                        </div>
-                      </div>
-                            </div>
-                        </div>
-                       
-                    </div>
+                <div class="card-body">
+                    <h3 class="card-title">Across the Holy Land</h3>
+                    <p class="card-text"> Across the Holy Land is a 2D adventure game which takes place in the cities of Palesitne. Learn about the background stroy of the game and its main and secondary characters. Give the demo a try and challenge yourself! </p>
+                    <a href="#" id="navMahmoud2" class="btn btn-dark">Explore</a>
+                    <a href="#" id="navAbout2" class="btn btn-dark">Play Now!</a>
                 </div>
-              </section>
-            
-            </main>
-      </div>
-    </div> <!--end of Home Page-->
-
-    <div id ="about">
-
-      <div class="extra">
-      <h1> Extra stuff I think might be consiered as deeper understanding</h1>
-      </div>
+            </div>
+        </div>
     </div>
-<div id ="models" class="main_contents" style="display:none;">
-
-  <div class = "row" >
-    
-    
-</div>
 
      
-    <div class ="row">
-        <div class="col-sm-6">
-          <div class = "card text-left">
-              <div class = "card-header"   >
-                <ul class="nav nav-tabs card-header-tabs">
-                    <li class="nav-item">
-                    <button type="button"  class="nav-link active" id="ps1bt" href="#" onMouseUp="ps1Scene(); ps1Description()";><img src="assets/images/ps_one.png" id="ps1icon">Playstation One</button>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"><img src="assets/images/ps4.png">Playstation 4</a>
-                    <div class="dropdown-menu">
-                        <button type="button" id="navPS4" class="dropdown-item" id="ps4bt" href="#" onMouseUp="ps4Scene(); ps4Description();";>PS4 Console</button>
-                        <button type="button" id ="navController" class="dropdown-item" href="#" onMouseup="controllerScene(); contDescription()">Sony DualShock 4</button>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"><img src="assets/images/store.png" id="store">Official Merch</a>
-                    <div class="dropdown-menu">
-                    <button type="button" id="navLight" class="dropdown-item" href="#" onMouseup="lightScene(); iconsDescription();">Icons Light</button>
-                    <a id="navCup" class="dropdown-item" href="javascript:swap('coke')">Coffee Cups</a>
-                    </div>
-                    </li>
-                </ul>
-              </div>
-              </div>
-            </div>
-          </div>
-
+    </div>
+    
+    
+    
+    
+    <div id="mahmoud">
+            
+    <!--First row, contains a cover photo of the game-->
     <div class="row">
+        <div class="col-sm-11" id="topPhotoGame">
+               <div id="Gametitle" class="col-xs-12 col-sm-4"> <!--Game description-->
+                   <h4>A 2D platform game where you go on a journey through old cities and face obstacles to save your brother</h4>
+                  
+               </div>
+       </div>
+       </div> <!--End of cover photo row-->
+
+    <!--Row which includes the main content of the Game page-->
+        <div class = "row">
+
+        <!--Sidebar-->
+         <div class="col-sm-2">
+        <div class="side-bar"> 
+
+            <ul class="tabs">
+                <a href="#GameContent"><li>Story</li></a>
+                <a href="#characters"><li>Characters</li></a>
+                <a href="#play"><li>Play!!</li></a>
+                <a href="#developers"><li>Developers</li></a>
               
-        <div class="col-sm-6">
-          <div class ="card-body" id="modelCard">
-                  <div id="x3dModelTitle_ps1" class="card-text pageTextData"></div>
-                  <div id="x3dModelTitle_ps4" class="card-text pageTextData"></div>
-                  <div id="x3dModelTitle_cont" class="card-text pageTextData"></div>
-                  <div id="x3dModelTitle_icons" class="card-text pageTextData"></div>
-
-                  <div class="model3D">
-                      <x3d id="wire">
-                        <scene>
-                            <Switch whichChoice="0" id='SceneSwitch'>
-                                <transform>
-                                    <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="assets/x3d/mypsone.x3d" > </inline>
-                                </transform>
-                                <transform>
-                                    <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModelps4();" url="assets/x3d/myplaystation.x3d"> </inline>
-                                </transform>
-                                <transform>
-                                    <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="assets/x3d/mycont.x3d"> </inline>
-                                </transform>
-
-                                <transform>
-                                    <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="assets/x3d/mylights.x3d"> </inline>
-                                </transform>
-                            </Switch>
-                        </scene>
-                      </x3d>
-                    </div> 
-
-             
+             </ul>
             </div>
+          </div> <!--End of sidebar-->
 
-              
+        <!--Column that contains the four main sections-->
+        <div class ="col-sm-9" id="GameContent">
+          
+            <!--Section 1: Game Story-->
+          <div id="GameStory">
 
-          </div>
+               <div id ="StoryTitle">
+                  <h4>STORY</h4>
+               
+               </div> 
+           
+                <section class="story" id="story">
 
-          <div class="col-sm-3" id="interaction">
-         
-            <!-- Column for the camera view controls -->
-                <div id="cameraControls" class="card text-left">
-                    <div class="card-header">
-                      <ul class="nav nav-tabs card-header-tabs">
-                      <!-- Dropdown nav-tab -->
-                      <li class="nav-item dropdown">
-                          <a class="nav-link active dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Cameras</a>
-                          <div class="dropdown-menu">
-                             
-                            <a class="dropdown-item" href="#" onclick="cameraFront();">Front</a>
-                            <a class="dropdown-item" href="#" onclick="cameraBack();">Back</a>
-                            <a class="dropdown-item" href="#" onclick="cameraTop();">Top</a>
-                            <a class="dropdown-item" href="#" onclick="cameraRight();">Side</a>
-                            <a class="dropdown-item" href="#" onclick="cameraDefault();">Default</a>
+                   <!--General descrioption of the story-->
+                    <p> Palestinian folktales includes many stories about mythical creatures, such as Jinn and Ghouls.
+                      In "Across The Holy Land", humans, jinn and ghouls share the same land. In the city of Bethelehm, 
+                      Mahmoud comes home to dicover his brother was taken by Iblis, the ruler of the 
+                      Jinn kingdom. Following his dad's orders, Mahmoud sets out to get his brother back. He travels the cities of 
+                      Palestine, faces challenges and puzzles, and 
+                      meets good characters along the way who help him through his journy.
+                    
+                    </p>
+                   
+                     <!--Simple slideshow showing different screenshots of the game-->
+                    <div class="slideshow" id="slideshow"> 
+                            <a id="prev">‹</a>
+                            <img src="assets/images/Screenshot1.png" class="carouselGame">
+                            <img src="assets/images/Screenshot2.png" alt="" class="carouselGame">
+                            <img src="assets/images/Screenshot3.png" alt="" class="carouselGame">
+                            <img src="assets/images/Screenshot4.png" class="carouselGame">
+                            <a id="next">›</a>
+                            <span class="caption">Mahmoud facing a floating enemy</span>
+                            <span class="caption">Need to collect more olives!</span>
+                            <span class="caption">Warning?</span>
+                            <span class="caption">Talking to strangers is helpful sometimes</span>
+                        </div>
+        
+                </section> 
+              </div> <!--End of game story and slidshow section-->
+
+
+            <!--Section 2: Game Characters-->
+          <section id="characters">
+            
+            <h4>Game Characters</h4>
+                
+                <div class ="row" id="mahmoudCharacter ">
+                 
+                  <div class ="col-sm-5 mahProfile">
+                <img src="assets/images/Mahmoud.jpg" >
+                <h3>Art by Likuro</h3>     
+                 </div>
+
+                <div class="col-sm-6">
+
+                 <div class="mahmoud-character_content">
+                    <h3>Mahmoud</h3>
+                    <span class="mahmoud-character_caption">
+                     Main Character    
+                    </span>
+                  </br>
+                      <p>Mahmoud is a 13 year old boy from Bethlehem, Palestine. He grew up in Dheisha Camp with his little brother, Ribhi.
+                        Mahmoud is a witty character, he likes making trouble and skipping school. Even though he's a smart kid, he doesn't put 
+                      too much effort into homework, it is not his thing.</p>
+
+                      <div class="dialogue-greet">
+                      <span style="font-weight:bold;"></span> 
+                      </div>
+                          
+                      <button class="option" id="mahLikes">Likes</button>
+                     <br>
+                      
+
+                     </div>
+                    </div>
+                    </div>
+                
+                  
+                  
+                    <h3>Secondary Characters</h3>
+                  
+                  <div class ="row" id="secondaryCharacters">
+                     
+                      <div class="characterCard-container">
+                          <div class="characterCard">
+                            <div class="front face">
+                              <button>
+                              <img alt="" src="assets/images/Ismail.jpg" />
+                               </button>
+                              
+                        </div>
+                   
+                            <div class="back face">
+                              <div class="text">
+                                <h1>Ismail</h1>
+                                <p>Ismail is Mahmoud's father. He is a very traditional man, and has his own backyard where he likes to grow olive and apple trees. 
+                                  While Ismail is known for being generous and kind, he is also a strict man. </p>
+                                <p>Ismail's son gets kidnapped at the time of his sickness, so he had no choice but to send his older son to save his brother.</p>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+
+                       
+             
+                        <div class="characterCard-container">
+                            <div class="characterCard">
+                              <div class="front face">
+                                <button>
+                                <img alt="" src="assets/images/Al Byad.jpg" />
+                                 </button>
                             
                           </div>
+                     
+                              <div class="back face">
+                                <div class="text">
+                                  <h1>Al Abyad.</h1>
+                                  <p> Al Abyad is a mysterious Ginnie who helps Mahmoud during his adventure. What Mahmoud doesn't know is that Al Abyad is Iblis's right hand assistant.</p>
+                                </div>
+                                
+                              </div>
+                            </div>
+                          </div>
+
+                         
+            
+            
+                <div class="characterCard-container">
+                    <div class="characterCard">
+                      <div class="front face">
+                        <button>
+                        <img alt="" src="assets/images/Ribhi.jpg" />
+                         </button>
+                    
+                  </div>
+             
+                      <div class="back face">
+                        <div class="text">
+                          <h1>Ribhi</h1>
+                          <p>Ribhi is 11 years old. Mahmoud is very protective of his little borther, who
+                            is the target of bullying by other kids. Ribhi likes animals & collecting rocks. He had a dog
+                            when he was five, but he died two years later. Ribhi was devastated for months. 
+                          </p>
+
+                          <p>The reason behind Ribhi's abduction is not known, some say the boy has hidden abilities. 
+                           </p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  
+            </div>
+
+            </div>
+                 
+          </section> <!--End of characters section-->
+
+          
+          <section class="play" id="play">
+    
+              <h4>Try The Demo!!</h4> 
+             
+              <p>While the game is still under development, a demo is available on the website. Give it a try!</p>
+
+              
+                <a class="PlayNow">
+                <img alt="" src="assets/images/Play.png" id="navAbout"/>
+                </a>
+
+                 <!--Zoom effect-->
+
+            
+       
+
+              
+              
+              <p>Use <b>fullscreen mode </b> for a better experience</p> 
+
+              
+  
+          </section>
+
+          <section class="developers" id="developers">
+
+              <h4>About The Developers</h4>
+              <div class="row">
+
+                  <div class = "col-sm-6">
+          
+          
+              
+                    <div class="personal-card">
+                        <div class="personal-image">
+                          <img src="assets/images/owlnight.jpg" />
+                        </div>
+                        <div class="personal-info">
+                          <div class="name">Owl Night</div>
+                          <div class="spacer"></div>
+                          <div class="title">Developer</div>
+                        </div>
+                        <div class="social-info">
+                          <div class="social-icons">
+                            <div class="icon fa fa-facebook"></div>
+                            <div class="icon fa fa-twitter"></div>
+                            <div class="icon fa fa-linkedin"></div>
+                            <div class="icon fa fa-instagram"></div>
+                          </div>
+                          <div class="social-details">
+                            <div class="details"></div>
+                            <div class="details"></div>
+                            <div class="details"></div>
+                            <div class="details"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class = "col-sm-6">
+          
+          
+                 
+                      <div class="personal-card">
+                          <div class="personal-image">
+                            <img src="assets/images/likuro.jpg" />
+                          </div>
+                          <div class="personal-info">
+                            <div class="name">Likuro</div>
+                            <div class="spacer"></div>
+                            <div class="title">Artist</div>
+                          </div>
+                          <div class="social-info">
+                            <div class="social-icons">
+                              <div class="icon fa fa-facebook"></div>
+                              <div class="icon fa fa-twitter"></div>
+                              <div class="icon fa fa-linkedin"></div>
+                              <div class="icon fa fa-instagram"></div>
+                            </div>
+                            <div class="social-details">
+                              <div class="details"></div>
+                              <div class="details"></div>
+                              <div class="details"></div>
+                              <div class="details"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                 </div>
+
+
+          </section>
+
+       
+      
+
+          
+  
+ 
+</div> <!--End of sections column-->
+</div> <!--End of game page row-->
+</div>
+
+   
+
+
+    <div id ="models">
+
+   
+      
+      <div class="row">
+            <!--3D Model Row-->    
+          <div class="col-sm-5">
+            <div class ="card-body">
+               
+                
+           
+                    <div class="model3D">
+                        <x3d id="wire">
+                          <scene>  
+                                  <transform>
+                                      <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="assets/x3d/palestineMap.x3d" > </inline>
+                                  </transform>
+                                  
+                          </scene>
+                        </x3d>
+                      </div> 
+              </div>
+              <p class="card-text">The green areas of the map are the main two regions in Palestine: West Bank (right) and Gaza Strip (left)</p>
+            </div> <!--End of model section-->
+
+            
+   
+            <div class = "cityButton col-sm-7" id="CityButtons">
+              <div class = "row">
+            
+                <div class="col-sm-6" id="jercity">
+              <a class="cityItem" href="#">
+                <div class="city_image"  onclick="cameraJerusalem();" id="navJer" style="background-image: url(https://iadsb.tmgrup.com.tr/760b5c/645/344/0/22/1000/554?u=https://idsb.tmgrup.com.tr/2017/12/16/1513375759795.jpg);"></div>
+                <p class="city_description">Jerusalem</p>
+              </a>
+           </div> 
+
+           <div class="col-sm-6" id="nabcity">
+                   <a class="cityItem" href="#">
+                    <div class="city_image" onclick="NablusCamera();"  id="navNab" style="background-image: url(https://www-cdn.najah.edu/media/filer_public_thumbnails/filer_public/a2/ca/a2ca4441-d2e0-4673-bcf4-42601bff860a/nablus_city_img.jpg__1170x658_q95_crop_subsampling-2_upscale.jpg);"></div>
+                    <p class="city_description">Nablus</p>
+                  </a>
+           </div>   
+          </div>
+        </div>
+      
+         
+            <div class="col-sm-4" id="interactionJ">
+
+               
+              <div class="card text-left">
+                  
+                  <div class="card-header">
+                      <ul class="nav nav-tabs card-header-tabs">
+                          <li class="nav-item">
+                          <button class="nav-link active" href="#" id="navImageJ" ><img src="assets/images/cam.png" id="imageIcon"></button>
+                          </li>
+
+                          <li class="nav-item">
+                              <button type="button"  class="nav-link active" href="#" id="navAudioJ" ><img src="assets/images/audio.png" id="imageIcon"></button>
+                              </li>
+                          <li class="nav-item">
+                              <button type="button"  class="nav-link active" id="navVideoJ" href="#" ><img src="assets/images/vid.png" id="imageIcon"></button>
+                              </li>
+                      </ul>
+                  </div><!--End of card header-->
+                  <div class="card-body">
+                                             
+                      <div class="hover-box" id="ImageJ">
+                          <img src="https://simerg.files.wordpress.com/2012/06/jerusalem05.jpg" alt="" />
+                          <h3>Dome of The Rock in Jerusalem</h3>
+                        </div>
+
+                        <div id="AudioJ">
+                          <p>Jerusalem in English, Al Quds in Arabic.</p>
+                            <audio id="englishJer">
+
+                                <source src="assets/audio/jerusalem.mp3">
+                              </audio>
+
+                              <audio id="arabicJer">
+
+                                  <source src="assets/audio/Al Quds.mp3">
+                                </audio>
+
+
+                              <div class = "row" id="audioRow">
+                                 
+                                  <button onclick="document.getElementById('englishJer').play()" type="button" class="btn btn-dark" data_but="btn-xs"><i class='fa fa-play'></i>Jerusalem in English</button>
+                              </div>
+                               <br>
+                              <div class = "row" id="audioRow">
+                                  
+                                  
+                                  <button onclick="document.getElementById('arabicJer').play()" type="button" class="btn btn-dark" data_but="btn-xs"><i class='fa fa-play'></i>Jerusalem in Arabic</button>
+                                  
+                              </div>
+                              
+                            
+                        </div>
+
+                        <div id="VideoJ">
+                            <h2>A Journey in the city of Jerusalem</h2>
+                          <iframe width="430" height="315" src="https://www.youtube.com/embed/BanxqagThQI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            
+                        </div>
+                     
+                  </div><!--End of card body-->
+
+
+
+                </div>
+           </div>
+           
+           <div class="col-sm-4" id="interactionN">
+
+            <div class="card text-left">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                        <button class="nav-link active" href="#" id="navImageN" ><img src="assets/images/cam.png" id="imageIcon"></button>
                         </li>
 
                         <li class="nav-item">
-                          <a class="nav-link active dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" >Render</a>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#" onclick="polygon();">Polygon</a>
-                            <a class="dropdown-item" href="#" onclick="wireframe();">Wireframe</a> 
-                            <a class="dropdown-item" href="#" onclick="vertex();">Vertex</a>
-                          </div>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Lights</a>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Default</a>
-                            <a class="dropdown-item" href="#" onclick="omniLights();">Onmi On/Off</a>
-                            <a class="dropdown-item" href="#" onclick="texChange();">Target On/Off</a>
-                            <a class="dropdown-item" href="#" onclick="headlight();">Headlight On/Off</a>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="card-body">
-                      <div id="topCardTitles" class="card-Title" ></div>                            
-                     
-                      
-                      <div id="topCardDescriptions" class="card-text ">
-                       
-                      </div>
-                    </div>
-                  </div>
-            
-          
-
-          
-              <div id="animationControls" class="card text-left">
-                  <div class="card-header">
-                      <div id="bottomCardTitles"></div>
-                    <ul class="nav nav-tabs card-header-tabs">
-                      <li class="nav-item dropdown">
-                        <a class= " nav-link active dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Animation</a>
-                        <div class="dropdown-menu">
-                           
-                    <a href="#" class="dropdown-item" id="openPs1" onclick="spin();">Open the lid!</a>
-                    <a href="#" class="dropdown-item" id="playCD" onclick="rotatecd();">Rotate the CD</a>
-                    
-                    <a href="#" class="dropdown-item" id="movePS4" onclick="spin2();" >Rotate this beauty</a>
-                    <a href="#" class="dropdown-item" id="stop" onclick="stopRotation(); stopRotations();">Stop</a>
-
-                    
-                    <a href="#" class="dropdown-item" id="square" onclick="spinsq();"><img src="assets/images/square.png" id="tv"></a>
-                    <a href="#" class="dropdown-item" id="x" onclick="spinx()"><img src="assets/images/x.ico" id="tv"></a>
-                    <a href="#" class="dropdown-item" id="circle" onclick="spinc();"><img src="assets/images/circle.png" id="tv"></a>
-                    <a href="#" class="dropdown-item" id="tri" onclick="spintri();"><img src="assets/images/tri.png" id="tv"></a>
-                 
-                    <a href="#" class="dropdown-item" id="r" onclick="joyR()">Right Joystick</a>
-                    <a href="#" class="dropdown-item" id="l" onclick="joyL();">Left Joystick</a>
-                        </div>
-                      </li>
-
-                     <!-- <li class="nav-item dropdown">
-                          <a class= " nav-link active dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Extra Options</a>
-                          <div class="dropdown-menu">
-                             
-                      <a href="#" class="dropdown-item" id="ps1color" onclick="ps1Color();">Change the color</a>
-                      <a class="dropdown-item" id="game" href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Make sure you open the lid first" id="ps1cd" onclick="texChange();">Try a different game</a>
-                      
-                      <a href="#" class="dropdown-item" id="ps1audio" onclick="playAudio();" >Play that nostalgic inro</a>
-
-                      <a href="#" class="dropdown-item" id="lightcolor" onclick="controllerColor ()">Change light color!</a>
-                    <a href="#" class="dropdown-item" id="contlogo" onclick="ps4Colors()">Maybe a different logo?</a>
-                          </div>
-                        </li>-->
-
-                      
+                            <button type="button"  class="nav-link active" href="#" id="navAudioN" ><img src="assets/images/audio.png" id="imageIcon"></button>
+                            </li>
+                        <li class="nav-item">
+                            <button type="button"  class="nav-link active" id="navVideoN" href="#" ><img src="assets/images/vid.png" id="imageIcon"></button>
+                            </li>
                     </ul>
-                  </div>
-                  <div id="animationButtons" class="card-body">
-                    <div class="card-Title x3dAnimationSubtitle homeText">
-                      <h3>Extra Options</h3>
-                    </div>
+                </div><!--End of card header-->
+                <div class="card-body">
+                                           
+                    <div class="hover-box" id="ImageN">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Nablus.jpg" alt="" />
+                        <h3>Nablus City</h3>
+                      </div>
 
-                    <button href="#" class="button" id="ps1color" onclick=" ps1Color();">Change the color</button>
-                      <button class="button" id="game" href="#" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Make sure you open the lid first" id="ps1cd" onclick="texChange();">Try a different game</button>
-                      
-                     
-                      <button class="button" href="#"  id="lightcolor" onclick="controllerColor ();">Change light color!</button>
-                    <button class="button" href="#"  id="contlogo" onclick="dualColor();">Change color</button>
-                    <button class="button" href="#"  id="ps4colors" onclick="ps4Color ();">Explore different colors</button>
-                    <button class="button" href="#"  id="iconsspec" onclick="flipSwitch();">Flip the switch off!</button>
-                    
-                    <div class="card-text x3dAnimationDescription drinksText">
-                        <p></p>
-                        <button controls loop class="button ps1button" href="#"  id="ps1audio" onclick="togglePlay();" >Play that nostalgic inro</button>
-                        <button controls loop class="button ps4button" href="#"  id="ps4audio" onclick="togglesPlay();" >Play the theme music</button>
-                    
+                      <div id="AudioN">
+
+                          <p></p>
+                        
+                        
+                        <audio id="englishNab">
+
+                              <source src="assets/audio/NablusEnglish.mp3">
+                            </audio>
+
+                            <audio id="arabicNab">
+
+                                <source src="assets/audio/NabArabic.mp3">
+                              </audio>
+
+
+                            <div class = "row" id="audioRow">
+                               
+                                <button onclick="document.getElementById('englishNab').play()" type="button" class="btn btn-dark" data_but="btn-xs"><i class='fa fa-play'></i>Nablus in English</button>
+                            </div>
+                             <br>
+                            <div class = "row" id="audioRow">
+                                
+                                
+                                <button onclick="document.getElementById('arabicNab').play()" type="button" class="btn btn-dark" data_but="btn-xs"><i class='fa fa-play'></i>Nablus in Arabic</button>
+                                
+                            </div>
+                            
                           
-                          
-                          
+                      </div>
+
+                      <div id="VideoN">
+                          <h2>A Day in Nablus City</h2>
+                          <iframe width="430" height="315" src="https://www.youtube.com/embed/4lxb3fGI8Ig" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         
                           
-                    </div>
-                  </div>
+                      </div>
+                   
+                </div><!--End of card body-->
 
-                  
-                </div>
+
+
               </div>
+         </div> 
 
-            <div class="col-sm-3">
-
+      <div class="col-sm-3" id="aboutCityJ">
+           
+          <!-- Column for the camera view controls -->
               <div class="card text-left">
                   <div class="card-header">
-                    <ul class="nav nav-tabs card-header-tabs">
-                      
-                    <h3> About the Model</h3>
-                    </ul>
+                  
+                    <h2 id="JStitle">About Jerulasem</h2>
+                    
+                    <!--<h2 id="NBtitle">About Nablus</h2>-->
                   </div>
                   <div class="card-body">
-                    <div class="card-Title x3dRendersubtitle homeText">
-                      <h3>Render and Lighting Options</h3>
+
+                   <p id="JSdescription">Jerusalem is revered as the beating heart of Palestine. It is the home of the Dome of the Rock and al Aqsa mosque, one of the most important sites in Islam.</p><p>Jerusalem city is intoxicating, inescapable and unforgettable, from the beautiful walls stretching out from Damascus gate to the sensory paradise of the Old City souqs.</p>
+                   <p id="NBdescription"></p>
+                     
                     </div>
+                  </div>  
+              </div>
+
+              <div class="col-sm-3" id="aboutCityN">
+           
+                <!-- Column for the camera view controls -->
+                    <div class="card text-left">
+                        <div class="card-header">
+                        
+                          <h2 id="JStitle">About Nablus</h2>
+                          
+                          <!--<h2 id="NBtitle">About Nablus</h2>-->
+                        </div>
+                        <div class="card-body">
+      
+                         <p id="JSdescription">Nablus is an important economic governorate to the north of Jerusalem, where there is a great deal of industry involved in olives, such as oil and soap.</p>
+                         <p>The large city is known as the uncrowned Queen of Palestine, due to its majestic beauty and rich history. Towering above the city is Mount Jarzim, where the world’s only settlement of Samaritans still exists.</p>
+                          <p>Nablus governorate is also home to the excellently restored Roman ruins at Sebastiya, which is becoming a very popular day trip for tourists.</p> 
+                          </div>
+                        </div>  
+                    </div>
+
+           
+                </div> <!--End of first row-->
+
+     <div class = "row">
+<div class = "col-sm-12">
+        <section id="DestrinationsJ">
+            <!--Card-->
+      <div class="card">
+
+     <!--Card content-->
+      <div class="card-body text-center">
+      
+        <div class="DesTitle">
+        <h4 ><strong>Landmarks in Jerusalem</strong></h4></div>
+
+                    <div class = "row">
+
+                    <div class="item">
+                      <img src="https://66.media.tumblr.com/eca1dc81dae86a422b3acbb8d233ca58/tumblr_o1fu6pnfvn1qk9vbwo1_400.jpg" />
+                        
+                        <div class="info">
+                          <h2>Dome of The Rock</h2>
+                          <p>
+                          The Dome of the Rock is an Islamic shrine located on the Temple Mount in the Old City of Jerusalem. It is in its core one of the oldest extant works of Islamic architecture.
+                          </p>
+                          
+                          <a href="https://en.wikipedia.org/wiki/Dome_of_the_Rock" target="_blank" class="more-btn">Find out more  </a>
+                          
+                        </div><!-- info -->
+                      </div>
+                      
+                      <div class="item">
+                        <img src="https://media.timeout.com/images/103512794/630/472/image.jpg" />
+                          
+                          <div class="info">
+                            <h2>The Old City</h2>
+                            <p>
+                              The holy city of three different religions, Jerusalem is every bit as beautiful and wondrous as it is twisted. Nowhere in the world is as rich in religious history as Jerusalem’s Old City.  
+                            </p>
+                            
+                            <a href="https://en.wikipedia.org/wiki/Old_City_(Jerusalem)" target="_blank" class="more-btn">Find out more </a>
+                            
+                          </div><!-- info -->
+                        </div>
+
+                        <div class="item">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/MtolivesviewC.jpg" />
+                            
+                            <div class="info">
+                              <h2>Mount of Olives</h2>
+                              <p>
+                                The Mount of Olives is a mountain ridge east of and adjacent to Jerusalem's Old City. It is named for the olive groves that once covered its slopes.
+                              </p>
+                              
+                              <a href="https://en.wikipedia.org/wiki/Mount_of_Olives" target="_blank" class="more-btn">Find out more  </a>
+                              
+                            </div><!-- info -->
+                          </div>
+                        </div>
+
+
+                   
+                    <!--Google map-->
                     
-                    <div class="card-text x3dRenderDescription drinksText">
-                        <div id="x3dCreationMethod_ps1" class="card-text pageTextData"></div>
-                        <div id="x3dCreationMethod_ps4" class="card-text pageTextData"></div>
-                        <div id="x3dCreationMethod_cont" class="card-text pageTextData"></div>
-                        <div id="x3dCreationMethod_icons" class="card-text pageTextData"></div>
-                    </div>
-                  </div>
+
+                    
+
                 </div>
-          </div>
-          </div>
+                <!--/.Card content-->
 
-
- <div class ="row">
-            <div class="col-sm-5">
-                <div class = "card text-left">
-                  <div class="card-header gallery-header">
-                    Gallery
-                  </div>
-                  <div class ="card-body">
-                    <h4 class ="card-title">3D Images</h4>
-                     <div class="gallery" id="gallery"></div>
-                    <p class="card-text">These images are rendered in 3ds max </p>
-                     </div>
-                  </div>
-              </div>
-            
-              </div>
-          
-          </div>
-          
-            
-          
-
-
-
-          </div>
-      
-              
-           <!--End of the model and gallery row--> 
-             
-              
-       <!-- End row for the interaction panels -->
-
-    </div>
-      
-  
-
-  <div class="row"> 
-       
-
-         <!-- Row which holds the card with the text-->
- <div id ="cokeDescription" class = "row">
-    <div class="col-sm-12">
-      <div class ="card">
-        <div class="card-body">
-          <div id="title_ps4" class="card-title homeText"></div>
-          <div id="subTitle_ps4" class="card-subtitle homeText"></div>
-          <div id="description_ps4" class="card-text homeText"></div> 
-          <a href="http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola" class="btn btn-primary">Find out more</a>
-        </div>
-      </div>
-    </div> 
-  </div>
-
-
-     <!-- Row which holds the card with the text-->
-     <div id ="spriteDescription" class = "row">
-        <div class="col-sm-12">
-          <div class ="card">
-            <div class="card-body">
-              <div id="title_sprite" class="card-title homeText"></div>
-              <div id="subTitle_sprite" class="card-subtitle homeText"></div>
-              <div id="description_sprite" class="card-text homeText"></div> 
-              <a href="http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola" class="btn btn-primary">Find out more</a>
             </div>
-          </div>
-        </div> 
-      </div>       
-      
+            <!--/.Card-->
 
-    </div> 
-     
+        </section>
+
+        <section id="DestrinationsN">
+            <!--Card-->
+      <div class="card">
+
+     <!--Card content-->
+      <div class="card-body text-center">
+      
+        <div class="DesTitle">
+        <h4 ><strong>Landmarks in Nablus</strong></h4></div>
+
+                    <div class = "row">
+
+                    <div class="item">
+                      <img src="https://www.welcometopalestine.com/wp-content/uploads/2016/08/Wadi-al-Badan-1-of-16.jpg" />
+                        
+                        <div class="info">
+                          <h2>Wadi al-Badan</h2>
+                          <p>
+                            estled in one of the lushest, most picturesque valleys in Palestine is the village of Wadi al-Badan. It is a typical village with a pleasant high street and a small range of shops, until you take into account the breath-taking valley.
+                          </p>
+                          
+                          <a href="https://en.wikipedia.org/wiki/Al-Badhan" target="_blank" class="more-btn">Find out more  </a>
+                          
+                        </div><!-- info -->
+                      </div>
+                      
+                      <div class="item">
+                        <img src="https://barbaralicious.com/wp-content/uploads/2018/04/jacobs-well.jpg" />
+                          
+                          <div class="info">
+                            <h2>Jacob's Well</h2>
+                            <p>
+                              Jacob's Well is a deep well hewn of solid rock that has been associated in religious tradition with Jacob for roughly two millennia.  
+                            </p>
+                            
+                            <a href="https://en.wikipedia.org/wiki/Jacob%27s_Well" target="_blank" class="more-btn">Find out more </a>
+                            
+                          </div><!-- info -->
+                        </div>
+
+                        <div class="item">
+                          <img src="https://www.welcometopalestine.com/wp-content/uploads/2016/06/Sebastiya-3.jpg" />
+                            
+                            <div class="info">
+                              <h2>Sebastiya</h2>
+                              <p>
+                                Sebastiya has become very popular with tourists thanks to the excavated remains of a Roman town and amphitheatre on a nearby hill
+                              </p>
+                              
+                              <a href="https://en.wikipedia.org/wiki/Sebastia,_Nablus" target="_blank" class="more-btn">Find out more  </a>
+                              
+                            </div><!-- info -->
+                          </div>
+                        </div>
+
+
+                   
+                    <!--Google map-->
+                    
+
+                    
+
+                </div>
+                <!--/.Card content-->
+
+            </div>
+            <!--/.Card-->
+
+          </section>
+
+     </div>
+        </div>        
   
+  
+  
+            
+            </div>
+          
+        
     
 
- 
-    <!--Footer-->
-
-    <nav id="footerColor" class="navbar navbar-expand-sm footer">
-      <div class="container-fluid">   
-          <div class="navbar-text float-left copyright">
-              <p><span class="align-baseline">&copy 2019 Mobile Web 3D Applications | <a href="javascript:changeLook()">Restyle</a> | <a href="javascript:changeBack()">Reset</a></span></p>
-          </div>
-          <div class="navbar-text float-right social">
-              <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
-              <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-              <a href="#"><i class="fab fa-google-plus fa-2x"></i></a>
-              <a href="#"><i class="fab fa-github-square fa-2x"></i></a>
-          </div>
-      </div>
-  </nav> 
 
 
-  <!-- Contact modal -->
-  <!-- The Modal -->
-  <div class="modal fade" id="contactModal">
-      <div class="modal-dialog">
-          <div class="modal-content">
+    <div id="food">
+
+     
+
+        <div class="row">
+  
+            <div id="topPhotoFood" class="photo">
+                <div class="foodtitle">
+                    <h4>Discover some of the most iconic dishes of the Palestinian cuisine</h4>
+                    <p>Palestinian cuisine consists of foods from or commonly eaten by Palestinians—which includes those living in Palestine, Jordan, refugee camps in nearby countries as well as by the Palestinian diaspora. The cuisine is a diffusion of the cultures of civilizations that settled in the region of Palestine.  </p>
+                </div>
+            </div>
+  
+        </div>
+       
+
+  
+        <div class = "row">
+
+
+          <!-- Buttons-->
+             <div class = "col-sm-2">
+               <div id ="foodButtons">
+                <ul>
+                    <div class = "container">
+                    <li><a  class ="btn-reset" >All Recepies</a></li>
+                    
+                    <li><a class ="btn-snacks" data-filter="snacks" >Snacks</a></li>
+                    <li><a class =" btn-food" data-filter="food" >Main Dishes</a></li>
+                    <li><a class =" btn-sweets" data-filter="sweets">Sweets</a></li>
+                    </div>
+                  
+                   
+                  </ul>
+                </div>
+                </div>
+          <!--Ingridients-->
+          <div class ="col-sm-10" id="recp">
           
-          <!-- Modal Header -->
-          <div class="modal-header">
-              <h4 class="modal-title">3D App Contact Details</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
+           
+
+            <div class="image-container">
+              
+              <div class="image-item" data-sort="sweets">
+                  <li class="imageContainer">
+                      <img src="http://www.alwaha.pk/wp-content/uploads/2017/11/1371591027843-400x400.jpeg">
+                      <a class="overlayText">
+                        Baklawa
+                      </a>
+                    </li></div>
+
+              <div class="image-item" data-sort="snacks">
+                  <li class="imageContainer">
+                      <img src="https://b.zmtcdn.com/data/pictures/chains/0/18658720/6198d9a264680b9cf6081273bd41b17f_featured_v2.jpg?fit=around%7C400%3A400&crop=400%3A400%3B%2A%2C%2A">
+                      <a class="overlayText" data-target="#modalIMG" data-toggle="modal">
+                        Falafel
+                      </a>
+                    </li>
+
+              </div>
+
+              <div class="image-item" data-sort="snacks"> <li class="imageContainer">
+                  <img src="https://i.pinimg.com/originals/5b/a8/6d/5ba86d68424ec393d641b110651a7837.jpg">
+                  <a class="overlayText">
+                    Fatayer
+                  </a>
+                </li></div>
+
+                <div class="image-item" data-sort="food"> <li class="imageContainer">
+                    <img src="https://neighbourfoodproduction.blob.core.windows.net/d0965e09-7705-4426-809b-07ef3cbeb8e4/products/medium/musakhan_eo3krnyj0cfiv3ryavzhq.jpg">
+                    <a class="overlayText">
+                      Musakhan
+                    </a>
+                  </li></div>
+
+                
+
+             
+            
           </div>
-          
-          <!-- Modal body -->
-          <div class="modal-body">
-              <p>Abeer</p>
           </div>
-          
-          <!-- Modal footer -->
-          <div class="modal-footer">
-              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-          </div>
-          
-          </div>
-      </div>
+            
+            
+                  </div>
+                
+              
+            </div>  
+              
+   
+
+  
+   <!-- Unity Game-->
+
+  
+
+  <div class="webgl-content"  id="about">
+    <div id="gameContainer" style="width: 960px; height: 600px"></div>
+    <div class="footer">
+      <div class="webgl-logo"></div>
+      <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+      <div class="title">Across The Holy Land - Press the Blue Button for fullScreen Mode</div>
+    </div>
   </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.1.1.js"></script>
+
+   
+
+    <!---<nav id="footerColor" class="navbar navbar-expand-sm footer">
+        <div class="container-fluid">   
+            <div class="navbar-text float-left copyright">
+                <p><span class="align-baseline">&copy 2019 Mobile Web 3D Applications | </a></span></p>
+            </div>
+            <div class="navbar-text float-right social">
+                <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fab fa-google-plus fa-2x"></i></a>
+                <a href="#"><i class="fab fa-github-square fa-2x"></i></a>
+            </div>
+        </div>
+    </nav>--> 
+
+  </div>
+
+
+
+
+    <!--Required Scripts-->
+
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/AcrossTheHolyLand.json", {onProgress: UnityProgress});
+    </script>
+
+
+<script src="js/jquery-3.1.1.js"></script>
     <!---<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
@@ -530,18 +1033,14 @@
    <script type='text/javascript' src='js/x3dom.js'></script>
 
    <!--Gallery Generator script-->
-   <script type="text/javascript" src="js/gallery_generator.js"></script>
+   
 
    <script src ="js/getJsonData.js"></script>
 
    <!-- JavaScript model interactions -->
    <script src="js/modelInteraction.js"></script>
- 
+   
 
-   <!--fancyBox3 => http://fancyapps.com/fancybox/3/ -->
-   <script src="js/jquery.fancybox.min.js"></script>
-
-   <script src="js/photoSlider.js"></script>
-    
+  
   </body>
 </html>

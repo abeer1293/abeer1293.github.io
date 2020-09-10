@@ -1,0 +1,272 @@
+/*-------------------------------------------------Interaction Card----------------------------------------*/
+
+
+#imageIcon{
+    
+    height: 76px;
+    width: 80px;
+    margin: auto;
+}
+  
+.cityButton{
+  margin: auto;
+}
+
+
+
+.DesTitle h4{
+  font-size: 35px;
+  font-style: bold;
+}
+
+/*The images of Jerusalem and Nablus*/
+
+  
+.cityItem {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    border-radius: 6pt;
+   margin:auto;
+    transition: 0.2s ease-in-out;
+  }
+  .cityItem:link, .item:visited, .item:active {
+    color: #333;
+    text-decoration: none;
+  }
+  .cityItem:hover {
+    opacity: 0.75;
+    transform: scale(0.98);
+    color: #333;
+    text-decoration: none;
+  }
+  .city_image {
+    height: 150pt;
+    width: 250pt;
+    background-color: #ddd;
+    border-radius: 6pt 6pt 0pt 0pt;
+    background-size: cover;
+    background-position: center center;
+  }
+  .city_description {
+    margin-bottom: 15px;
+    padding-top: 18pt;
+    font-size: 20px;
+    margin-left: 10pt;
+    margin-right: 10pt;
+    color: black;
+    text-align: center;
+    font-family: ChampagneandLimousinesBold;
+  }
+  
+  
+  #audioIcon{
+    
+    height: 56px;
+    width: 60px;
+    background: transparent;
+  }
+  
+  .grayscale img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    /* For Webkit browsers */
+    filter: gray;
+    /* For IE 6 - 9 */
+    /*webkit-transition: all 0.6s ease;
+    /* Transition for Webkit browsers */
+  }
+  .grayscale:hover img {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    filter: none;
+  }
+  
+  a.thumbnail {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.02);
+  }
+  a.thumbnail:hover {
+    border-color: #c4c4c4;
+    text-decoration: none;
+  }
+  
+  .image-gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .image-gallery .caption p {
+    margin: 0;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+
+
+
+  .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link, .nav-item {
+    color: transparent; /* Font color for active font */
+    background-color: transparent; /* Blue color for background */
+    border-color: transparent;
+  }
+  
+  .nav-tabs .nav-link .nav-item {
+    color: transparent;  
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+  
+  .nav-tabs .nav-link:hover {
+   
+    border: 1px solid transparent;
+    transform: scale(1.1);
+    transition: .2s;
+  color: transparent;
+  }
+  
+  
+  
+  .hover-box {
+    
+    border: 2px solid #FFF;
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .hover-box:hover img {
+    opacity: .2;
+  }
+  .hover-box:hover h3 {
+    transform: translate(0, 0);
+  }
+  .hover-box img {
+    transition: .4s;
+  }
+  
+  
+  .hover-box h3 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 5px 8px;
+    margin: 0;
+    border-top: 2px solid #FFF;
+    border-right: 2px solid #FFF;
+    color: #FFF;
+    font-size: 20px;
+    background-color: #333;
+    transform: translate(0, 100%);
+    transition: .4s;
+  }
+  
+  #audioRow{
+  
+    margin-left: 1px;
+    color: gray;
+  }
+  
+  .PlayButton{
+    margin: 20px;
+    color: black;
+  }
+  
+  .btn btn-info
+  {
+    color: black;
+  }
+  
+/*---------------------------------------------------------------Destinations-------------------------------------------------------*/
+
+
+  .item {
+    position:relative;
+    width:400px;
+    margin:20px auto;
+    cursor:pointer;
+    overflow:hidden;
+    
+
+    background-color: #000000ad;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.068);
+  color: #ffffff;
+   
+  
+  }
+  .item img {
+    width:400px;
+    height:300px;
+    opacity: 0.75;
+    
+    
+  }
+  .item .info {
+    width:400px;
+    height:300px;
+    background:rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top:0px;
+    left:200px;
+      opacity:0;
+    color:#ffffff;
+    transition:left .2s linear, opacity .2s linear;
+    -webkit-transition:left .2s linear, opacity .2s linear;
+  }
+  .item:hover .info {
+    left:0px;
+    opacity:1;
+    transition:left .2s linear, opacity .2s linear;
+    -webkit-transition:left .2s linear, opacity .2s linear;
+    
+  }
+  .item h2 {
+    padding-left:25px;
+    font-family:'Londrina Solid';
+      font-size:40px;
+    margin:0;
+    padding:20px 0px 5px 0px;
+    text-align:center;
+  }
+  .item p {
+    margin-top: 5px;
+    padding: 0px 18px;
+   text-align: center;
+    font-family: Helvetica, Arial;
+  }
+
+  .item a{
+    color: black;
+  }
+  .more-btn {
+    
+  display: inline-block;
+  color: #FFF;
+  text-decoration: none;
+ font-size: 15px;
+  font-family: Helvetica,Arial;
+  background: rgba(197, 119, 64, 0.836);
+  padding: 11px 25px;
+  margin-left: 2%;
+  margin-top:15px;
+  transition: background .2s linear;
+  -webkit-transition: background .2s linear;
+  position: center;
+  }
+
+  
+
+
+  .more-btn:hover {
+    
+    
+    background: rgba(202, 129, 77, 0.836);
+    transition: background .2s linear;
+    -webkit-transition: background .2s linear;
+    
+  }
+  
+  
+
+/**********************************************************************************************************************/

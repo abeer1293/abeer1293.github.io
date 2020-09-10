@@ -3,8 +3,8 @@ var counter = 0;
 $(document).ready(function() {
 	
 	selectPage();
-	
-});
+	selectModel();
+	selectMode();
 
 	function selectPage() {
 
@@ -12,9 +12,10 @@ $(document).ready(function() {
 		$('#about').hide();
 		$('#models').hide();
 		$('#interaction').hide();
-		$('#cokeDescription').hide();
-		$('#spriteDescription').hide(); 
-		//$('#pepperDescription').hide(); 
+		
+		$('#food').hide();
+		$('#mahmoud').hide();
+		$('#handicrafts').hide();
 
 
 		$('#navHome').click(function(){
@@ -24,8 +25,10 @@ $(document).ready(function() {
 			$('#interaction').hide();
 			$('#cokeDescription').hide();
 			$('#spriteDescription').hide(); 
-			$('#gallery').hide();
-			//$('#pepperDescription').hide(); 	  
+			$('#footerColor').show(); 
+			$('#food').hide();
+			$('#mahmoud').hide();
+			$('#handicrafts').hide();	  
 		});
 
 		$('#navAbout').click(function(){
@@ -35,241 +38,503 @@ $(document).ready(function() {
 			$('#interaction').hide();
 			$('#cokeDescription').hide();
 			$('#spriteDescription').hide(); 
-			//$('#pepperDescription').hide(); 	  
+			$('#footerColor').hide(); 
+			$('#food').hide();
+			$('#mahmoud').hide();
+			$('#handicrafts').hide();	  
+		});
+
+		$('#navAbout2').click(function(){
+			$('#home').hide();
+			$('#about').show();
+			$('#models').hide();
+			$('#interaction').hide();
+			$('#cokeDescription').hide();
+			$('#spriteDescription').hide(); 
+			$('#footerColor').hide(); 
+			$('#food').hide();
+			$('#mahmoud').hide();
+			$('#handicrafts').hide();	  
 		});
 
 		$('#navModels').click(function(){
 			$('#home').hide();
 			$('#about').hide();
 			$('#models').show();
-			$('#interaction').show();
-
-			$("#x3dModelTitle_ps1").show();
-			$("#x3dModelTitle_ps4").hide();
-			$("#x3dModelTitle_cont").hide();
-			$("#x3dModelTitle_icons").hide();
-
-			$("#x3dCreationMethod_ps1").show();
-			$("#x3dCreationMethod_ps4").hide();
-			$("#x3dCreationMethod_cont").hide();
-			$("#x3dCreationMethod_icons").hide();
-
-			$("#movePS4").hide();
-
-			$("#square").hide();
-			$("#x").hide();
-			$("#circle").hide();
-			$("#tri").hide();
-
-			$("#r").hide();
-			$("#l").hide();
-
-			$("#lightcolor").hide();
-			$("#contlogo").hide();
-			$("#ps4colors").hide();
-			$("#iconsspec").hide();
-			$("#ps4audio").hide();
-
-
+			$('#interactionJ').hide();
+			$('#interactionN').hide();
+			$('#aboutCityJ').hide();
+			$('#aboutCityN').hide();
+			$('#footerColor').show();
+			$('#food').hide();
+			$('#mahmoud').hide();
+			$('#handicrafts').hide();
+			$('#jercity').show();
+			$('#nabcity').show(); 
+			$('#CityButtons').show(); 
+			$('#DestrinationsJ').hide(); 
+			$('#DestrinationsN').hide();  
 		});
+
+		$('#navModels2').click(function(){
+			$('#home').hide();
+			$('#about').hide();
+			$('#models').show();
+			$('#interactionJ').hide();
+			$('#interactionN').hide();
+			$('#aboutCityJ').hide();
+			$('#aboutCityN').hide();
+			$('#footerColor').show();
+			$('#food').hide();
+			$('#mahmoud').hide();
+			$('#handicrafts').hide();
+			$('#jercity').show();
+			$('#nabcity').show(); 
+			$('#CityButtons').show(); 
+			$('#DestrinationsJ').hide(); 
+			$('#DestrinationsN').hide();  
+		});
+
+		$('#navJer').click(function(){
+			$('#home').hide();
+			$('#food').hide();
+			$('#about').hide();
+			$('#models').show();
+			$('#interactionJ').show();
+			$('#interactionN').hide();
+			$('#aboutCityJ').show();
+			$('#aboutCityN').hide();
+			$('#VideoJ').hide();
+			$('#AudioJ').hide();
+			$('#spriteDescription').hide(); 
+			$('#footerColor').hide(); 
+			$('#jercity').hide();
+			$('#nabcity').hide();
+			$('#CityButtons').hide();  
+			$('#DestrinationsJ').show();
+			$('#DestrinationsN').hide(); 
+			
+		
+		});
+
+		$('#navAudioJ').click(function(){
+			$('#home').hide();
+			$('#food').hide();
+			$('#about').hide();
+			$('#models').show();
+			$('#interactionJ').show();
+			$('#aboutCityJ').show();
+			$('#ImageJ').hide();
+			$('#VideoJ').hide();
+			$('#AudioJ').show();
+			$('#spriteDescription').hide(); 
+			$('#footerColor').hide(); 
+			$('#jercity').hide();
+			$('#nabcity').hide(); 
+			
+		
+		});
+		$('#navImageJ').click(function(){
+			$('#home').hide();
+			$('#food').hide();
+			$('#about').hide();
+			$('#models').show();
+			$('#interactionJ').show();
+			$('#aboutCityJ').show();
+			$('#ImageJ').show();
+			$('#VideoJ').hide();
+			$('#AudioJ').hide();
+			$('#spriteDescription').hide(); 
+			$('#footerColor').hide(); 
+			$('#jercity').hide();
+			$('#nabcity').hide(); 
+			
+		
+		});
+
+		$('#navVideoJ').click(function(){
+			$('#home').hide();
+			$('#food').hide();
+			$('#about').hide();
+			$('#models').show();
+			$('#interactionJ').show();
+			$('#aboutCityJ').show();
+			$('#ImageJ').hide();
+			$('#VideoJ').show();
+			$('#AudioJ').hide();
+			$('#spriteDescription').hide(); 
+			$('#footerColor').hide(); 
+			$('#jercity').hide();
+			$('#nabcity').hide(); 
+			
+		
+		});
+
+		$('#navFood').click(function(){
+			$('#home').hide();
+			$('#food').show();
+			$('#about').hide();
+			$('#models').hide();
+			$('#interaction').hide();
+			$('#cokeDescription').hide();
+			$('#spriteDescription').hide(); 
+			$('#footerColor').hide(); 
+			$('#rec2').hide();
+			$('#rec1').show();
+			$('#rec3').hide();
+			$('#mahmoud').hide();
+			$('#handicrafts').hide();	  
+		});
+
+		$('#navFood2').click(function(){
+			$('#home').hide();
+			$('#food').show();
+			$('#about').hide();
+			$('#models').hide();
+			$('#interaction').hide();
+			$('#cokeDescription').hide();
+			$('#spriteDescription').hide(); 
+			$('#footerColor').hide(); 
+			$('#rec2').hide();
+			$('#rec1').show();
+			$('#rec3').hide();
+			$('#mahmoud').hide();
+			$('#handicrafts').hide();	  
+		});
+		$('#navHandicrafts').click(function(){
+			$('#home').hide();
+			$('#food').hide();
+			$('#about').hide();
+			$('#models').hide();
+			$('#interaction').hide();
+			$('#cokeDescription').hide();
+			$('#spriteDescription').hide(); 
+			$('#footerColor').hide(); 
+			$('#rec2').hide();
+			$('#rec1').hide();
+			$('#rec3').hide();
+			$('#mahmoud').hide();
+			$('#handicrafts').show();	  
+		});
+
+		$('#navMahmoud').click(function(){
+			$('#home').hide();
+			$('#food').hide();
+			$('#about').hide();
+			$('#models').hide();
+			$('#interaction').hide();
+			$('#cokeDescription').hide();
+			$('#spriteDescription').hide(); 
+			$('#footerColor').hide(); 
+			$('#rec2').hide();
+			$('#rec1').hide();
+			$('#rec3').hide();
+			$('#mahmoud').show();
+			$('#handicrafts').hide();	  
+		});
+
+		$('#navMahmoud2').click(function(){
+			$('#home').hide();
+			$('#food').hide();
+			$('#about').hide();
+			$('#models').hide();
+			$('#interaction').hide();
+			$('#cokeDescription').hide();
+			$('#spriteDescription').hide(); 
+			$('#footerColor').hide(); 
+			$('#rec2').hide();
+			$('#rec1').hide();
+			$('#rec3').hide();
+			$('#mahmoud').show();
+			$('#handicrafts').hide();	  
+		});
+
+		$('#jers').click(function(){
+			$('#home').hide();
+			$('#food').hide();
+			$('#about').hide();
+			$('#models').show();
+			$('#interaction').hide();
+			$('#cokeDescription').hide();
+			$('#spriteDescription').hide(); 
+			$('#footerColor').hide();
+			$('#nablus').hide();
+				  
+		});
+
+		
+		$('#navNab').click(function(){
+			$('#home').hide();
+			$('#food').hide();
+			$('#about').hide();
+			$('#models').show();
+			$('#interactionJ').hide();
+			$('#interactionN').show();
+			$('#aboutCityJ').hide();
+			$('#VideoJ').hide();
+			$('#AudioJ').hide();
+			$('#aboutCityN').show();
+			$('#VideoN').hide();
+			$('#AudioN').hide();
+			$('#spriteDescription').hide(); 
+			$('#footerColor').hide(); 
+			$('#jercity').hide();
+			$('#nabcity').hide();
+			$('#CityButtons').hide();  
+			$('#DestrinationsJ').hide();
+			$('#DestrinationsN').show(); 
+			
+		
+		});
+
+		$('#navAudioN').click(function(){
+			$('#home').hide();
+			$('#food').hide();
+			$('#about').hide();
+			$('#models').show();
+			$('#interactionN').show();
+			$('#aboutCityN').show();
+			$('#ImageN').hide();
+			$('#VideoN').hide();
+			$('#AudioN').show();
+			$('#spriteDescription').hide(); 
+			$('#footerColor').hide(); 
+			$('#jercity').hide();
+			$('#nabcity').hide(); 
+			
+		
+		});
+		$('#navImageN').click(function(){
+			$('#home').hide();
+			$('#food').hide();
+			$('#about').hide();
+			$('#models').show();
+			$('#interactionN').show();
+			$('#aboutCityN').show();
+			$('#ImageN').show();
+			$('#VideoN').hide();
+			$('#AudioN').hide();
+			$('#spriteDescription').hide(); 
+			$('#footerColor').hide(); 
+			$('#jercity').hide();
+			$('#nabcity').hide(); 
+			
+		
+		});
+
+		$('#navVideoN').click(function(){
+			$('#home').hide();
+			$('#food').hide();
+			$('#about').hide();
+			$('#models').show();
+			$('#interactionN').show();
+			$('#aboutCityN').show();
+			$('#ImageN').hide();
+			$('#VideoN').show();
+			$('#AudioN').hide();
+			$('#spriteDescription').hide(); 
+			$('#footerColor').hide(); 
+			$('#jercity').hide();
+			$('#nabcity').hide(); 
+			
+		
+		});
+
+	
 
 		
 	}
 
-function ps1Description() {
-		$("button").click(function(){
-			
-			$("#cokeDescription").show();
-			$("#spriteDescription").hide();
-			$("#pepperDescription").hide();
-			
-			$("#x3dModelTitle_ps1").show();
-			$("#x3dModelTitle_ps4").hide();
-			$("#x3dModelTitle_cont").hide();
-			$("#x3dModelTitle_icons").hide();
+	function selectModel() {
 
-			$("#x3dCreationMethod_ps1").show();
-			$("#x3dCreationMethod_ps4").hide();
-			$("#x3dCreationMethod_cont").hide();
-			$("#x3dCreationMethod_icons").hide();
-
-			$("#openPs1").show();
-			$("#playCD").show();
-			$("#ps1color").show();
-			$("#game").show();
-			$("#ps1audio").show();
-
-
-			$("#movePS4").hide();
-
-			$("#square").hide();
-			$("#x").hide();
-			$("#circle").hide();
-			$("#tri").hide();
-
-			$("#r").hide();
-			$("#l").hide();
-
-			$("#lightcolor").hide();
-			$("#contlogo").hide();
-			$("#ps4colors").hide();
-			$("#iconsspec").hide();
-
-			$("#ps4audio").hide();
-
-			
-		}); 
-	}
+		$('#navPS1').click(function(){
+			$('#psone').show();
+			$('#ps4').hide();
+			$('#controller').hide();
+			$('#lights').hide();
+			$('#cup').hide();
+			$('#interaction').show(); 
+			$('#cokeDescription').show();
+			$('#spriteDescription').hide();
+			$('#cameraControls').show();
+			$('#food').hide();
+			 
 	
-function ps4Description() {
-		$("button").click(function(){
-	
-			$("#x3dModelTitle_ps1").hide();
-			$("#x3dModelTitle_ps4").show();
-			$("#x3dModelTitle_cont").hide();
-			$("#x3dModelTitle_icons").hide();
+		});
 
-			$("#x3dCreationMethod_ps1").hide();
-			$("#x3dCreationMethod_ps4").show();
-			$("#x3dCreationMethod_cont").hide();
-			$("#x3dCreationMethod_icons").hide();
+		$('#navPS4').click(function(){
+			$('#psone').hide();
+			$('#ps4').show();
+			$('#controller').hide();
+			$('#lights').hide();
+			$('#cup').hide();
+			$('#interaction').show(); 
+			$('#cokeDescription').show();
+			$('#spriteDescription').hide();
+			$('#cameraControls').show(); 
+			$('#food').hide();	  	  
+		});
 
-			$("#openPs1").hide();
-			$("#playCD").hide();
-			$("#ps1color").hide();
-			$("#game").hide();
-			$("#ps1audio").hide();
+		$('#navController').click(function(){
+			$('#psone').hide();
+			$('#ps4').hide();
+			$('#controller').show();
+			$('#lights').hide();
+			$('#cup').hide();
+			$('#interaction').show(); 
+			$('#cokeDescription').show();
+			$('#spriteDescription').hide();
+			$('#cameraControls').show(); 
+			$('#food').hide();	  	  
+		});
 
+		$('#navLight').click(function(){
+			$('#psone').hide();
+			$('#ps4').hide();
+			$('#controller').hide();
+			$('#lights').show();
+			$('#cup').hide();
+			$('#interaction').show(); 
+			$('#cokeDescription').show();
+			$('#spriteDescription').hide();
+			$('#cameraControls').show(); 
+			$('#food').hide();	  	  
+		});
 
-			$("#movePS4").show();
-
-			$("#square").hide();
-			$("#x").hide();
-			$("#circle").hide();
-			$("#tri").hide();
-
-			$("#r").hide();
-			$("#l").hide();
-
-			$("#lightcolor").hide();
-			$("#contlogo").hide();
-			$("#ps4colors").show();
-			$("#iconsspec").hide();
-
-			$("#ps4audio").show();
-
-
-
-		}); 
-	}
-	
-function contDescription() {
-		$("button").click(function(){
-	
-			$("#x3dModelTitle_ps1").hide();
-			$("#x3dModelTitle_ps4").hide();
-			$("#x3dModelTitle_cont").show();
-			$("#x3dModelTitle_icons").hide();
-
-			$("#x3dCreationMethod_ps1").hide();
-			$("#x3dCreationMethod_ps4").hide();
-			$("#x3dCreationMethod_cont").show();
-			$("#x3dCreationMethod_icons").hide();
-
-			$("#openPs1").hide();
-			$("#playCD").hide();
-			$("#ps1color").hide();
-			$("#game").hide();
-			$("#ps1audio").hide();
-
-			$("#movePS4").hide();
-
-			$("#square").hide();
-			$("#x").hide();
-			$("#circle").hide();
-			$("#tri").hide();
-
-			$("#r").show();
-			$("#l").show();
-
-			$("#lightcolor").show();
-			$("#contlogo").show();
-			$("#ps4colors").hide();
-			$("#iconsspec").hide();
-			$("#ps4audio").hide();
+		$('#navCup').click(function(){
+			$('#psone').hide();
+			$('#ps4').hide();
+			$('#controller').hide();
+			$('#lights').hide();
+			$('#cup').show();
+			$('#interaction').show(); 
+			$('#cokeDescription').show();
+			$('#spriteDescription').hide();
+			$('#cameraControls').show(); 
+			$('#food').hide();	  	  
+		});
 
 
-		}); 
+
+		
 	}
 
-	function iconsDescription() {
-		$("button").click(function(){
+	function selectMode() {
+
+		$('#navPS1').click(function(){
+			$('#psone').show();
+			$('#ps4').hide();
+			$('#controller').hide();
+			$('#lights').hide();
+			$('#cup').hide();
+			$('#interaction').show(); 
+			$('#cokeDescription').show();
+			$('#spriteDescription').hide();
+			$('#cameraControls').show();
+			 
 	
-			$("#x3dModelTitle_ps1").hide();
-			$("#x3dModelTitle_ps4").hide();
-			$("#x3dModelTitle_cont").hide();
-			$("#x3dModelTitle_icons").show();
+		});
 
-			$("#x3dCreationMethod_ps1").hide();
-			$("#x3dCreationMethod_ps4").hide();
-			$("#x3dCreationMethod_cont").hide();
-			$("#x3dCreationMethod_icons").show();
+		$('#navPS4').click(function(){
+			$('#psone').hide();
+			$('#ps4').show();
+			$('#controller').hide();
+			$('#lights').hide();
+			$('#cup').hide();
+			$('#interaction').show(); 
+			$('#cokeDescription').show();
+			$('#spriteDescription').hide();
+			$('#cameraControls').show(); 	  	  
+		});
 
-			$("#openPs1").hide();
-			$("#playCD").hide();
-			$("#ps1color").hide();
-			$("#game").hide();
-			$("#ps1audio").hide();
+		$('#navController').click(function(){
+			$('#psone').hide();
+			$('#ps4').hide();
+			$('#controller').show();
+			$('#lights').hide();
+			$('#cup').hide();
+			$('#interaction').show(); 
+			$('#cokeDescription').show();
+			$('#spriteDescription').hide();
+			$('#cameraControls').show(); 	  	  
+		});
+
+		$('#navLight').click(function(){
+			$('#psone').hide();
+			$('#ps4').hide();
+			$('#controller').hide();
+			$('#lights').show();
+			$('#cup').hide();
+			$('#interaction').show(); 
+			$('#cokeDescription').show();
+			$('#spriteDescription').hide();
+			$('#cameraControls').show(); 	  	  
+		});
+
+		$('#navCup').click(function(){
+			$('#psone').hide();
+			$('#ps4').hide();
+			$('#controller').hide();
+			$('#lights').hide();
+			$('#cup').show();
+			$('#interaction').show(); 
+			$('#cokeDescription').show();
+			$('#spriteDescription').hide();
+			$('#cameraControls').show(); 	  	  
+		});
 
 
-			$("#movePS4").hide();
 
-			$("#square").show();
-			$("#x").show();
-			$("#circle").show();
-			$("#tri").show();
-
-			$("#stop").hide();
-
-			$("#r").hide();
-			$("#l").hide();
-
-			$("#lightcolor").hide();
-			$("#contlogo").hide();
-			$("#ps4colors").hide();
-			$("#iconsspec").show();
-			$("#ps4audio").hide();
-			
-		}); 
+		
 	}
 
-	
+
+});
+
+
 function changeLook() {
 	counter += 1;
 	switch (counter) {
 		case 1:
-		document.getElementById('bodyColor').style.backgroundImage = 'url(assets/images/20anni.jpg)';
+		document.getElementById('bodyColor').style.backgroundImage = 'url(assets/images/ps.jpg)';
 			//document.getElementById('bodyColor').style.backgroundColor = 'lightblue';
-			document.getElementById('headerColor').style.backgroundColor = '#9FA4AC';
-			document.getElementById('footerColor').style.backgroundColor = '#D23B3B';
+			document.getElementById('headerColor').style.backgroundColor = '#FF0000';
+			document.getElementById('footerColor').style.backgroundColor = '#FF9900';
 			document.getElementById('psLogo').style.backgroundImage = 'url(assets/images/psoneLogo.png)';
 			
 			break;
 		case 2:
-		counter = 0;
-		document.getElementById('bodyColor').style.backgroundImage = 'url(assets/images/ps2.jpg)';
-			document.getElementById('headerColor').style.backgroundImage = 'linear-gradient(to bottom right, #8AB4E1, #CB92DE)';
+			document.getElementById('bodyColor').style.backgroundColor = '#FF6600';
+			document.getElementById('headerClor').style.backgroundColor = '#FF9999';
 			document.getElementById('footerColor').style.backgroundColor = '#996699';
-			document.getElementById('psLogo').style.backgroundImage = 'url(assets/images/ps2.png)';
 			break;
-		
+		case 3:
+			document.getElementById('bodyColor').style.backgroundColor = 'coral';
+			document.getElementById('headerColor').style.backgroundColor = 'darkcyan';
+			document.getElementById('footerColor').style.backgroundColor = 'darksalmom';
+			break;
+		case 4:
+			counter = 0;
+			document.getElementById('bodyColor').style.backgroundColor = 'lightgrey';
+			document.getElementById('headerColor').style.backgroundColor = 'chocolate';
+			document.getElementById('footerColor').style.backgroundColor = 'dimgrey';
+			break;
 	}
 }
 
 function changeBack() {
-	document.getElementById('bodyColor').style.backgroundImage = 'url(assets/images/ps4.jpg)';
-	document.getElementById('headerColor').style.backgroundImage = 'grey';
-			document.getElementById('footerColor').style.backgroundColor = 'grey';
-			document.getElementById('psLogo').style.backgroundImage = 'url(assets/images/psLogo.png)';
+	document.getElementById('bodyColor').style.backgroundColor = '#FFFFFF';
+	document.getElementById('headerColor').style.backgroundColor = 'rgba(175,0,0,1)';
+	document.getElementById('footerColor').style.backgroundColor = 'rgba(175,0,0,1)';
 }
+
+
+
+$(".hover").mouseleave(
+	function () {
+	  $(this).removeClass("hover");
+	}
+  );
+
+
 
